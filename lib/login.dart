@@ -19,6 +19,7 @@ class _loginPageState extends State<loginPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
         key: _mainScaffoldKey,
@@ -62,7 +63,7 @@ class _loginPageState extends State<loginPage> {
                 elevation: 2.0,
                 // color: Colors.white,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0)
+                    borderRadius: BorderRadius.circular(10.0)
                 ),
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
@@ -223,7 +224,7 @@ class _loginPageState extends State<loginPage> {
                       ),
                     ),
                     onPressed: (){
-                    // Navigator.push(context, MaterialPageRoute(builder: (context) => Home()),);
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Home()),);
                     }),
               ),
               Container(

@@ -21,6 +21,7 @@ class _signupPageState extends State<signupPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.tealAccent,
         body: SafeArea(
