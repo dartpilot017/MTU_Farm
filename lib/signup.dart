@@ -8,11 +8,13 @@ class signupPage extends StatefulWidget {
 class _signupPageState extends State<signupPage> {
 
   final FocusNode focusEmail = FocusNode();
+  final FocusNode focusNumber = FocusNode();
   final FocusNode focusPassword = FocusNode();
   final FocusNode focusName = FocusNode();
   final FocusNode focusConfirmPassword = FocusNode();
 
   final TextEditingController nameController = TextEditingController();
+  final TextEditingController numberController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController confirmPasswordController =
@@ -21,8 +23,9 @@ class _signupPageState extends State<signupPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.tealAccent,
+        backgroundColor: Colors.teal.shade800,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -34,7 +37,7 @@ class _signupPageState extends State<signupPage> {
                   style: TextStyle(
                     fontFamily: 'Yellowtail',
                     fontSize: 25.0,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -45,7 +48,7 @@ class _signupPageState extends State<signupPage> {
                   style: TextStyle(
                     fontFamily: 'SourceSansPro',
                     fontSize: 15.0,
-                    color: Colors.black,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 2.5,
                   ),
@@ -82,6 +85,51 @@ class _signupPageState extends State<signupPage> {
                             border: InputBorder.none,
                             icon: Icon(
                               Icons.sort_by_alpha,
+                              color: Colors.black,
+                            ),
+                            hintText: "Enter name",
+                            hintStyle: TextStyle(
+                              fontSize: 16.0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 2.0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0)
+                ),
+                margin: EdgeInsets.symmetric(
+                  vertical: 15.0,
+                  horizontal: 20.0,
+                ),
+                child: Container(
+                  height: 50.0,
+                  width: 350.0,
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: EdgeInsets.only(
+                          right: 10.5,
+                          left: 10.5,
+                        ),
+                        child: TextField(
+                          focusNode: focusNumber,
+                          controller: numberController,
+                          keyboardType: TextInputType.number,
+                          style: TextStyle(
+                              fontSize: 18.0,
+                              color: Colors.black
+                          ),
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            icon: Icon(
+                              Icons.phone_sharp,
+                              color: Colors.black,
                             ),
                             hintText: "Enter name",
                             hintStyle: TextStyle(
@@ -232,7 +280,7 @@ class _signupPageState extends State<signupPage> {
                     "Already have an account?",
                     style: TextStyle(
                         decoration: TextDecoration.underline,
-                        color: Colors.black,
+                        color: Colors.white60,
                         fontSize: 13.0,
                         fontFamily: "SignikaRegular"),
                   ),
@@ -266,7 +314,7 @@ class _signupPageState extends State<signupPage> {
                         "Register",
                         style: TextStyle(
                           fontSize: 25.0,
-                          color: Colors.black,
+                          color: Colors.white,
                         ),
                       ),
                     ),

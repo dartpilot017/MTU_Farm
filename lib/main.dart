@@ -8,6 +8,7 @@ void main() {
 class kore_farms extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: loginPage(),
     );
   }

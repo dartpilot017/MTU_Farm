@@ -11,6 +11,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white60,
         body: ListView(
@@ -48,17 +49,6 @@ class _HomeState extends State<Home> {
               padding: EdgeInsets.symmetric(vertical: 20.0),
               child: Container(
                 height: 150,
-                // child: Swiper(
-                //   itemBuilder: (BuildContext context, int index) {
-                //     return Container(
-                //       decoration: BoxDecoration(
-                //         color: Color(0XFF0D2C54),
-                //         borderRadius: BorderRadius.circular(10)
-                //       ),
-                //
-                //     );
-                //   },
-                // ),
               ),
             ),
           ],
