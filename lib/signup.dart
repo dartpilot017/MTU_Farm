@@ -12,6 +12,8 @@ class _signupPageState extends State<signupPage> {
   final FocusNode focusPassword = FocusNode();
   final FocusNode focusName = FocusNode();
   final FocusNode focusConfirmPassword = FocusNode();
+  final FocusNode focussecurityQuestion = FocusNode();
+  final FocusNode focussecurityAnswer = FocusNode();
 
   final TextEditingController nameController = TextEditingController();
   final TextEditingController numberController = TextEditingController();
@@ -19,13 +21,27 @@ class _signupPageState extends State<signupPage> {
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController confirmPasswordController =
   TextEditingController();
+  final TextEditingController securityQuestionController = TextEditingController();
+  final TextEditingController securityAnswerController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.teal,
+      ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.teal.shade800,
+        backgroundColor: Colors.teal.shade400,
+        appBar: AppBar(
+          // title: Text(
+          //   "SIGNUP PAGE",
+          //   style: TextStyle(
+          //     fontWeight: FontWeight.bold,
+          //     fontSize: 25.0
+          //   ),
+          // ),
+        ),
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -70,8 +86,8 @@ class _signupPageState extends State<signupPage> {
                     children: <Widget>[
                       Padding(
                           padding: EdgeInsets.only(
-                            right: 10.5,
-                            left: 10.5,
+                            right: 5.5,
+                            left: 5.5,
                           ),
                         child: TextField(
                           focusNode: focusName,
@@ -131,7 +147,7 @@ class _signupPageState extends State<signupPage> {
                               Icons.phone_sharp,
                               color: Colors.black,
                             ),
-                            hintText: "Enter name",
+                            hintText: "Enter number",
                             hintStyle: TextStyle(
                               fontSize: 16.0,
                             ),
@@ -186,6 +202,94 @@ class _signupPageState extends State<signupPage> {
                   ),
                 ),
               ),
+              // Card(
+              //   elevation: 2.0,
+              //   shape: RoundedRectangleBorder(
+              //       borderRadius: BorderRadius.circular(8.0)
+              //   ),
+              //   margin: EdgeInsets.symmetric(
+              //     vertical: 15.0,
+              //     horizontal: 20.0,
+              //   ),
+              //   child: Container(
+              //     height: 50.0,
+              //     width: 350.0,
+              //     child: Column(
+              //       children: <Widget>[
+              //         Padding(
+              //           padding: EdgeInsets.only(
+              //             right: 10.5,
+              //             left: 10.5,
+              //           ),
+              //           child: TextField(
+              //             focusNode: focussecurityQuestion,
+              //             controller: securityQuestionController,
+              //             keyboardType: TextInputType.name,
+              //             style: TextStyle(
+              //                 fontSize: 18.0,
+              //                 color: Colors.black
+              //             ),
+              //             decoration: InputDecoration(
+              //               border: InputBorder.none,
+              //               icon: Icon(
+              //                 Icons.lock,
+              //                 color: Colors.black,
+              //               ),
+              //               hintText: "Set security question",
+              //               hintStyle: TextStyle(
+              //                 fontSize: 16.0,
+              //               ),
+              //             ),
+              //           ),
+              //         ),
+              //       ],
+              //     ),
+              //   ),
+              // ),
+              // Card(
+              //   elevation: 2.0,
+              //   shape: RoundedRectangleBorder(
+              //       borderRadius: BorderRadius.circular(8.0)
+              //   ),
+              //   margin: EdgeInsets.symmetric(
+              //     vertical: 15.0,
+              //     horizontal: 20.0,
+              //   ),
+              //   child: Container(
+              //     height: 50.0,
+              //     width: 350.0,
+              //     child: Column(
+              //       children: <Widget>[
+              //         Padding(
+              //           padding: EdgeInsets.only(
+              //             right: 10.5,
+              //             left: 10.5,
+              //           ),
+              //           child: TextField(
+              //             focusNode: focussecurityAnswer,
+              //             controller: securityAnswerController,
+              //             keyboardType: TextInputType.name,
+              //             style: TextStyle(
+              //                 fontSize: 18.0,
+              //                 color: Colors.black
+              //             ),
+              //             decoration: InputDecoration(
+              //               border: InputBorder.none,
+              //               icon: Icon(
+              //                 Icons.lock,
+              //                 color: Colors.black,
+              //               ),
+              //               hintText: "Set Sequrity Answer",
+              //               hintStyle: TextStyle(
+              //                 fontSize: 16.0,
+              //               ),
+              //             ),
+              //           ),
+              //         ),
+              //       ],
+              //     ),
+              //   ),
+              // ),
               Card(
                 elevation: 2.0,
                 shape: RoundedRectangleBorder(
@@ -319,7 +423,7 @@ class _signupPageState extends State<signupPage> {
                       ),
                     ),
                     onPressed: (){}),
-              )
+              ),
             ],
           ),
         ),

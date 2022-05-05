@@ -19,12 +19,9 @@ class _loginPageState extends State<loginPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
-      ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.teal.shade800,
+        backgroundColor: Colors.teal,
         key: _mainScaffoldKey,
         body: SafeArea(
           child: Column(
@@ -33,7 +30,7 @@ class _loginPageState extends State<loginPage> {
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
-                backgroundColor: Colors.blueGrey,
+                backgroundColor: Colors.green,
                 // backgroundImage: AssetImage('image/taiwo.jpeg'),
               ),
               Text(
