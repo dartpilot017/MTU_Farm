@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kore_farms/signup.dart';
 import 'package:kore_farms/home.dart';
+import 'package:kore_farms/forgot_password.dart';
 
 class loginPage extends StatefulWidget {
   _loginPageState createState() => _loginPageState();
@@ -31,7 +32,7 @@ class _loginPageState extends State<loginPage> {
               CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.green,
-                // backgroundImage: AssetImage('image/taiwo.jpeg'),
+                backgroundImage: AssetImage('images/tu.jpeg'),
               ),
               Text(
                 'MTU\'S FARM APP',
@@ -194,7 +195,9 @@ class _loginPageState extends State<loginPage> {
                         fontSize: 13.0,
                         fontFamily: "SignikaRegular"),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => forgotPasswordPage()));
+                  },
                 ),
               ),
               Container(

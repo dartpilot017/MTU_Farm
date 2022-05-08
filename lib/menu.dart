@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kore_farms/home.dart';
 
 class menu extends StatelessWidget {
   @override
@@ -67,9 +68,11 @@ class menu extends StatelessWidget {
                 ),
             ),
             ListTile(
-              leading: Icon(Icons.input_outlined),
-              title: Text("Welcome", style: TextStyle(color: Colors.white)),
-              onTap: ()=>{},
+              leading: Icon(Icons.home),
+              title: Text("Home", style: TextStyle(color: Colors.white)),
+              onTap: ()=>{
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Home()))
+              },
             ),
             ListTile(
                 leading: Icon(Icons.verified_user),
