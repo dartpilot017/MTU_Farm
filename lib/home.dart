@@ -75,8 +75,8 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular(8.0)
                   ),
                   child: Container(
-                    height: 50.0,
-                    width: 450.0,
+                    height: 150.0,
+                    width: 350.0,
                     child: Column(
                       children: <Widget> [
                         Padding(
@@ -84,13 +84,220 @@ class _HomeState extends State<Home> {
                             right: 10.5,
                             left: 10.5,
                           ),
-                          child: Center(
-                            child: Text(
-                              "FRUITS",
-                              style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold
+                          child: MaterialButton(
+                            onPressed: ()=>{},
+                            child: Center(
+                              child: Text(
+                                "FRUITS",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  // child: ListTile(
+                  //   leading: Icon(
+                  //     Icons.lock_outline_rounded,
+                  //     color: Colors.teal.shade900,
+                  //   ),
+                  //   title: Text(
+                  //     'a',
+                  //     style: TextStyle(
+                  //       fontSize: 20.0,
+                  //       fontFamily: 'SourceSansPro',
+                  //       color: Colors.teal.shade900,
+                  //     ),
+                  //   ),
+                  // ),
+                ),
+                Card(
+                  color: Colors.orange.shade400,
+                  margin: EdgeInsets.symmetric(
+                    vertical: 20.0,
+                    horizontal: 20.0,
+                  ),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8.0)
+                  ),
+                  child: Container(
+                    height: 150.0,
+                    width: 350.0,
+                    child: Column(
+                      children: <Widget> [
+                        Padding(
+                          padding: EdgeInsets.only(
+                            right: 10.5,
+                            left: 10.5,
+                          ),
+                          child: MaterialButton(
+                            onPressed: ()=>{},
+                            child: Center(
+                              child: Text(
+                                "FRUITS",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  // child: ListTile(
+                  //   leading: Icon(
+                  //     Icons.lock_outline_rounded,
+                  //     color: Colors.teal.shade900,
+                  //   ),
+                  //   title: Text(
+                  //     'a',
+                  //     style: TextStyle(
+                  //       fontSize: 20.0,
+                  //       fontFamily: 'SourceSansPro',
+                  //       color: Colors.teal.shade900,
+                  //     ),
+                  //   ),
+                  // ),
+                ),
+                Card(
+                  color: Colors.orange.shade400,
+                  margin: EdgeInsets.symmetric(
+                    vertical: 20.0,
+                    horizontal: 20.0,
+                  ),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8.0)
+                  ),
+                  child: Container(
+                    height: 150.0,
+                    width: 350.0,
+                    child: Column(
+                      children: <Widget> [
+                        Padding(
+                          padding: EdgeInsets.only(
+                            right: 10.5,
+                            left: 10.5,
+                          ),
+                          child: MaterialButton(
+                            onPressed: ()=>{},
+                            child: Center(
+                              child: Text(
+                                "FRUITS",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  // child: ListTile(
+                  //   leading: Icon(
+                  //     Icons.lock_outline_rounded,
+                  //     color: Colors.teal.shade900,
+                  //   ),
+                  //   title: Text(
+                  //     'a',
+                  //     style: TextStyle(
+                  //       fontSize: 20.0,
+                  //       fontFamily: 'SourceSansPro',
+                  //       color: Colors.teal.shade900,
+                  //     ),
+                  //   ),
+                  // ),
+                ),
+                Card(
+                  color: Colors.orange.shade400,
+                  margin: EdgeInsets.symmetric(
+                    vertical: 20.0,
+                    horizontal: 20.0,
+                  ),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8.0)
+                  ),
+                  child: Container(
+                    height: 150.0,
+                    width: 350.0,
+                    child: Column(
+                      children: <Widget> [
+                        Padding(
+                          padding: EdgeInsets.only(
+                            right: 10.5,
+                            left: 10.5,
+                          ),
+                          child: MaterialButton(
+                            onPressed: ()=>{},
+                            child: Center(
+                              child: Text(
+                                "FRUITS",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  // child: ListTile(
+                  //   leading: Icon(
+                  //     Icons.lock_outline_rounded,
+                  //     color: Colors.teal.shade900,
+                  //   ),
+                  //   title: Text(
+                  //     'a',
+                  //     style: TextStyle(
+                  //       fontSize: 20.0,
+                  //       fontFamily: 'SourceSansPro',
+                  //       color: Colors.teal.shade900,
+                  //     ),
+                  //   ),
+                  // ),
+                ),
+                Card(
+                  color: Colors.orange.shade400,
+                  margin: EdgeInsets.symmetric(
+                    vertical: 20.0,
+                    horizontal: 20.0,
+                  ),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8.0)
+                  ),
+                  child: Container(
+                    height: 150.0,
+                    width: 350.0,
+                    child: Column(
+                      children: <Widget> [
+                        Padding(
+                          padding: EdgeInsets.only(
+                            right: 10.5,
+                            left: 10.5,
+                          ),
+                          child: MaterialButton(
+                            onPressed: ()=>{},
+                            child: Center(
+                              child: Text(
+                                "FRUITS",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold
+                                ),
                               ),
                             ),
                           ),
