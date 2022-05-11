@@ -34,13 +34,13 @@ class _signupPageState extends State<signupPage> {
       home: Scaffold(
         backgroundColor: Colors.teal.shade400,
         appBar: AppBar(
-          // title: Text(
-          //   "SIGNUP PAGE",
-          //   style: TextStyle(
-          //     fontWeight: FontWeight.bold,
-          //     fontSize: 25.0
-          //   ),
-          // ),
+          title: Text(
+            "SIGNUP",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 25.0
+            ),
+          ),
         ),
         body: SafeArea(
           child: Column(

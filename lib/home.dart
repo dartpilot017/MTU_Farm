@@ -80,105 +80,115 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Container(
-                  height: 150.0,
-                  width: 350.0,
-                  // color: Colors.orange,
-                  margin: EdgeInsets.symmetric(
-                      vertical: 10.0,
-                      horizontal: 10.0,
-                    ),
-                  child: MaterialButton(
-                    // splashColor: Colors.orange,
-                    onPressed: ()=>{
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => fruitPage()))
-                    },
+                GestureDetector(
+                  child: Container(
+                    height: 150.0,
+                    width: 350.0,
+                    // color: Colors.orange,
+                    margin: EdgeInsets.symmetric(
+                        vertical: 10.0,
+                        horizontal: 10.0,
+                      ),
                     child: Card(
                       // color: Colors.orange.shade400,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.0)
                       ),
                         color: Colors.orange,
-                        child: Column(
-                          children: <Widget> [
-                            Padding(
-                              padding: EdgeInsets.only(
-                                right: 10.5,
-                                left: 10.5,
-                              ),
-                                child: Center(
-                                  child: Padding(
-                                    padding: EdgeInsets.only(
-                                      top: 12.0
-                                    ),
-                                    child: Text(
-                                      "FRUITS",
-                                      style: TextStyle(
-                                        fontSize: 20,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold
+                        child: MaterialButton(
+                          onPressed: (){},
+                          child: Container(
+                            decoration: BoxDecoration(
+                              image: DecorationImage(image: AssetImage("images/fruit.webp"), fit: BoxFit.fitWidth),
+                            ),
+                            child: Column(
+                              children: <Widget> [
+                                Padding(
+                                  padding: EdgeInsets.only(
+                                    right: 10.5,
+                                    left: 10.5,
+                                  ),
+                                  child: Center(
+                                    child: Padding(
+                                      padding: EdgeInsets.only(
+                                          top: 12.0
+                                      ),
+                                      child: Text(
+                                        "FRUITS",
+                                        style: TextStyle(
+                                            fontSize: 40,
+                                            // color: Colors.,
+                                            fontWeight: FontWeight.bold
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
-                              ),
-                          ],
+                              ],
+                            ),
+                          ),
                         ),
                       ),
-                  ),
-                  ),
+                    ),
+                  onTap: (){},
+                ),
                 ],
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Container(
-                  height: 150.0,
-                  width: 350.0,
-                  // color: Colors.orange,
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10.0,
-                    horizontal: 10.0,
-                  ),
-                  child: MaterialButton(
-                    // splashColor: Colors.orange,
-                    onPressed: ()=>{
-                      // Navigator.push(context, MaterialPageRoute(builder: (context) => fruitPage()))
-                    },
+                GestureDetector(
+                  child: Container(
+                    height: 150.0,
+                    width: 350.0,
+                    // color: Colors.orange,
+                    margin: EdgeInsets.symmetric(
+                      vertical: 10.0,
+                      horizontal: 10.0,
+                    ),
                     child: Card(
                       // color: Colors.orange.shade400,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.0)
                       ),
                       color: Colors.green,
-                      child: Column(
-                        children: <Widget> [
-                          Padding(
-                            padding: EdgeInsets.only(
-                              right: 10.5,
-                              left: 10.5,
-                            ),
-                            child: Center(
-                              child: Padding(
-                              padding: EdgeInsets.only(
-                                  top: 12.0
-                              ),
-                              child: Text(
-                                "VEGETABLES",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold
+                      child: MaterialButton(
+                        onPressed: (){},
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(image: AssetImage("images/veg.jpeg"), fit: BoxFit.fitWidth),
+                          ),
+                          child: Column(
+                            children: <Widget> [
+                              Padding(
+                                padding: EdgeInsets.only(
+                                  right: 10.5,
+                                  left: 10.5,
+                                ),
+                                child: Center(
+                                  child: Padding(
+                                    padding: EdgeInsets.only(
+                                        top: 12.0
+                                    ),
+                                    child: Text(
+                                      "VEGETABLES",
+                                      style: TextStyle(
+                                          fontSize: 40,
+                                          // color: Colors.,
+                                          fontWeight: FontWeight.bold
+                                      ),
+                                    ),
+                                  ),
                                 ),
                               ),
-                            ),
-                            ),
+                            ],
                           ),
-                        ],
+                        ),
                       ),
                     ),
                   ),
+                  onTap: (){},
                 ),
               ],
             ),
@@ -186,52 +196,57 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Container(
-                  height: 150.0,
-                  width: 350.0,
-                  // color: Colors.orange,
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10.0,
-                    horizontal: 10.0,
-                  ),
-                  child: MaterialButton(
-                    // splashColor: Colors.orange,
-                    onPressed: ()=>{
-                      // Navigator.push(context, MaterialPageRoute(builder: (context) => fruitPage()))
-                    },
+                GestureDetector(
+                  child: Container(
+                    height: 150.0,
+                    width: 350.0,
+                    // color: Colors.orange,
+                    margin: EdgeInsets.symmetric(
+                      vertical: 10.0,
+                      horizontal: 10.0,
+                    ),
                     child: Card(
                       // color: Colors.orange.shade400,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.0)
                       ),
                       color: Colors.greenAccent,
-                      child: Column(
-                        children: <Widget> [
-                          Padding(
-                            padding: EdgeInsets.only(
-                              right: 10.5,
-                              left: 10.5,
-                            ),
-                            child: Center(
-                              child: Padding(
+                      child: MaterialButton(
+                        onPressed: (){},
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(image: AssetImage("images/crops.webp"), fit: BoxFit.fitWidth),
+                          ),
+                          child: Column(
+                            children: <Widget> [
+                              Padding(
                                 padding: EdgeInsets.only(
-                                    top: 12.0
+                                  right: 10.5,
+                                  left: 10.5,
                                 ),
-                                child: Text(
-                                  "CROPS",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold
+                                child: Center(
+                                  child: Padding(
+                                    padding: EdgeInsets.only(
+                                        top: 12.0
+                                    ),
+                                    child: Text(
+                                      "CROPS",
+                                      style: TextStyle(
+                                          fontSize: 40,
+                                          // color: Colors.,
+                                          fontWeight: FontWeight.bold
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
+                            ],
                           ),
-                        ],
+                        ),
                       ),
                     ),
                   ),
+                  onTap: (){},
                 ),
               ],
             ),
@@ -239,52 +254,57 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Container(
-                  height: 150.0,
-                  width: 350.0,
-                  // color: Colors.orange,
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10.0,
-                    horizontal: 10.0,
-                  ),
-                  child: MaterialButton(
-                    // splashColor: Colors.orange,
-                    onPressed: ()=>{
-                      // Navigator.push(context, MaterialPageRoute(builder: (context) => fruitPage()))
-                    },
+                GestureDetector(
+                  child: Container(
+                    height: 150.0,
+                    width: 350.0,
+                    // color: Colors.orange,
+                    margin: EdgeInsets.symmetric(
+                      vertical: 10.0,
+                      horizontal: 10.0,
+                    ),
                     child: Card(
                       // color: Colors.orange.shade400,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.0)
                       ),
-                      color: Colors.yellowAccent,
-                      child: Column(
-                        children: <Widget> [
-                          Padding(
-                            padding: EdgeInsets.only(
-                              right: 10.5,
-                              left: 10.5,
-                            ),
-                            child: Center(
-                              child: Padding(
+                      color: Colors.brown,
+                      child: MaterialButton(
+                        onPressed: (){},
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(image: AssetImage("images/bake.jpeg"), fit: BoxFit.fitWidth),
+                          ),
+                          child: Column(
+                            children: <Widget> [
+                              Padding(
                                 padding: EdgeInsets.only(
-                                    top: 12.0
+                                  right: 10.5,
+                                  left: 10.5,
                                 ),
-                                child: Text(
-                                  "MTU BAKERY",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold
+                                child: Center(
+                                  child: Padding(
+                                    padding: EdgeInsets.only(
+                                        top: 12.0,
+                                    ),
+                                    child: Text(
+                                      "MTU BAKERY",
+                                      style: TextStyle(
+                                          fontSize: 40,
+                                          // color: Colors.,
+                                          fontWeight: FontWeight.bold
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
+                            ],
                           ),
-                        ],
+                        ),
                       ),
                     ),
                   ),
+                  onTap: (){},
                 ),
               ],
             ),
@@ -292,52 +312,57 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Container(
-                  height: 150.0,
-                  width: 350.0,
-                  // color: Colors.orange,
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10.0,
-                    horizontal: 10.0,
-                  ),
-                  child: MaterialButton(
-                    // splashColor: Colors.orange,
-                    onPressed: ()=>{
-                      // Navigator.push(context, MaterialPageRoute(builder: (context) => fruitPage()))
-                    },
+                GestureDetector(
+                  child: Container(
+                    height: 150.0,
+                    width: 350.0,
+                    // color: Colors.orange,
+                    margin: EdgeInsets.symmetric(
+                      vertical: 10.0,
+                      horizontal: 10.0,
+                    ),
                     child: Card(
                       // color: Colors.orange.shade400,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.0)
                       ),
                       color: Colors.cyan,
-                      child: Column(
-                        children: <Widget> [
-                          Padding(
-                            padding: EdgeInsets.only(
-                              right: 10.5,
-                              left: 10.5,
-                            ),
-                            child: Center(
-                              child: Padding(
+                      child: MaterialButton(
+                        onPressed: (){},
+                        child: Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(image: AssetImage("images/waterb.jpeg"), fit: BoxFit.fitWidth),
+                          ),
+                          child: Column(
+                            children: <Widget> [
+                              Padding(
                                 padding: EdgeInsets.only(
-                                    top: 12.0
+                                  right: 10.5,
+                                  left: 10.5,
                                 ),
-                                child: Text(
-                                  "MTU WATER",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold
+                                child: Center(
+                                  child: Padding(
+                                    padding: EdgeInsets.only(
+                                        top: 12.0
+                                    ),
+                                    child: Text(
+                                      "MTU WATER",
+                                      style: TextStyle(
+                                          fontSize: 40,
+                                          // color: Colors.,
+                                          fontWeight: FontWeight.bold
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
+                            ],
                           ),
-                        ],
+                        ),
                       ),
                     ),
                   ),
+                  onTap: (){},
                 ),
               ],
             ),

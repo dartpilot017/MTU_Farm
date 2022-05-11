@@ -196,7 +196,7 @@ class _loginPageState extends State<loginPage> {
                         fontFamily: "SignikaRegular"),
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => forgotPasswordPage()));
+                    // Navigator.push(context, MaterialPageRoute(builder: (context) => forgotPasswordPage()));
                   },
                 ),
               ),
