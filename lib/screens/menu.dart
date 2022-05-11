@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:kore_farms/home.dart';
+import 'package:kore_farms/pages//home.dart';
 
 class menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: Colors.teal.shade300,
-      child: SafeArea(
+      child: Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("images/fruitback.jpeg"),
+                fit: BoxFit.fitHeight
+            )
+        ),
+        padding: EdgeInsets.only(
+          top: 40.5,
+          bottom: 0
+        ),
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
@@ -27,7 +37,7 @@ class menu extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 10,
                     ),
                     Expanded(
                       child: Text(
@@ -57,9 +67,14 @@ class menu extends StatelessWidget {
             //   ),
             // ),
             DrawerHeader(
+              padding: EdgeInsets.only(
+                top: 10,
+                left: 10.0,
+                right: 10.0
+              ),
                 child: DecoratedBox(
                   decoration: BoxDecoration(
-                    color: Colors.teal,
+                    // color: Colors.teal,
                     image: DecorationImage(
                         fit: BoxFit.fill,
                         image: AssetImage("images/tu.jpeg")

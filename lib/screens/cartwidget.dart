@@ -8,6 +8,7 @@ class _cartPageState extends State<cartPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
 
     );
   }

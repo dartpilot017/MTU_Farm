@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:kore_farms/menu.dart';
+import 'package:kore_farms/screens/menu.dart';
 
-class fruitPage extends StatefulWidget {
-  _fruitPageState createState() => _fruitPageState();
+class orangePage extends StatefulWidget {
+  _orangePageState createState() => _orangePageState();
 }
 
-class _fruitPageState extends State<fruitPage> {
+class _orangePageState extends State<orangePage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +14,7 @@ class _fruitPageState extends State<fruitPage> {
         drawer: menu(),
         appBar: AppBar(
           title: Text(
-            "FRUITS",
+            "ORANGES",
             style: TextStyle(
                 fontWeight: FontWeight.bold
             ),
@@ -67,7 +67,6 @@ class _fruitPageState extends State<fruitPage> {
             ),
           ],
         ),
-        // backgroundColor: Colors.orange,
       ),
     );
   }

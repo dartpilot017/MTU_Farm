@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kore_farms/signup.dart';
-import 'package:kore_farms/home.dart';
-import 'package:kore_farms/forgot_password.dart';
+import 'package:kore_farms/pages/signup.dart';
+import 'package:kore_farms/pages//home.dart';
+import 'package:kore_farms/pages/forgot_password.dart';
 
 class loginPage extends StatefulWidget {
   _loginPageState createState() => _loginPageState();
@@ -24,7 +24,13 @@ class _loginPageState extends State<loginPage> {
       home: Scaffold(
         backgroundColor: Colors.teal,
         key: _mainScaffoldKey,
-        body: SafeArea(
+        body: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("images/farm.webp"),
+                  fit: BoxFit.fitHeight
+              )
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -57,7 +63,7 @@ class _loginPageState extends State<loginPage> {
                 height: 20.0,
                 width: 250.0,
                 child: Divider(
-                  color: Colors.teal.shade200,
+                  color: Colors.white,
                 ),
               ),
               Card(
@@ -191,12 +197,14 @@ class _loginPageState extends State<loginPage> {
                     "Forgot Password?",
                     style: TextStyle(
                         decoration: TextDecoration.underline,
-                        color: Colors.black,
+                        color: Colors.white60,
                         fontSize: 13.0,
-                        fontFamily: "SignikaRegular"),
+                        fontFamily: "SignikaRegular",
+                        fontWeight: FontWeight.bold
+                    ),
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => forgotPasswordPage()));
+                    // Navigator.push(context, MaterialPageRoute(builder: (context) => forgotPasswordPage()));
                   },
                 ),
               ),

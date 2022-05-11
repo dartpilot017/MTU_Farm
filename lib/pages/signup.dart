@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kore_farms/login.dart';
+import 'package:kore_farms/pages/login.dart';
 
 class signupPage extends StatefulWidget {
   _signupPageState createState() => _signupPageState();
@@ -33,16 +33,22 @@ class _signupPageState extends State<signupPage> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal.shade400,
-        appBar: AppBar(
-          // title: Text(
-          //   "SIGNUP PAGE",
-          //   style: TextStyle(
-          //     fontWeight: FontWeight.bold,
-          //     fontSize: 25.0
-          //   ),
-          // ),
-        ),
-        body: SafeArea(
+        // appBar: AppBar(
+        //   title: Text(
+        //     "SIGNUP",
+        //     style: TextStyle(
+        //       fontWeight: FontWeight.bold,
+        //       fontSize: 25.0
+        //     ),
+        //   ),
+        // ),
+        body: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("images/farm.webp"),
+                  fit: BoxFit.fitHeight
+              )
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
