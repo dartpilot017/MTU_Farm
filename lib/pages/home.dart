@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
         drawer: menu(),
         appBar: AppBar(
           title: Text(
-            " Hi there, Kofo ",
+            "",
             style: TextStyle(
                 fontWeight: FontWeight.bold,
 
@@ -322,35 +322,6 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
-                                      image: DecorationImage(image: AssetImage("images/oranges.webp"),
-                                          fit: BoxFit.fitHeight),
-                                      borderRadius: BorderRadius.circular(18.0)
-                                  ),
-                                ),
-                                onTap: (){},
-                              ),
-                              Text(
-                                "Oranges",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold
-                                ),
-                              ),
-                              Text("N300 per/kg"),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                              GestureDetector(
-                                child: Container(
-                                  height: 200.0,
-                                  width: 150.0,
-                                  // color: Colors.orange,
-                                  margin: EdgeInsets.symmetric(
-                                    vertical: 10.0,
-                                    horizontal: 10.0,
-                                  ),
-                                  decoration: BoxDecoration(
                                       image: DecorationImage(image: AssetImage("images/grape.png"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.circular(18.0)
@@ -380,7 +351,7 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
-                                      image: DecorationImage(image: AssetImage("images/melon.jpeg"),
+                                      image: DecorationImage(image: AssetImage("images/Mangoes.png"),
                                           fit: BoxFit.fitHeight),
                                       borderRadius: BorderRadius.circular(18.0)
                                   ),
@@ -388,7 +359,36 @@ class _HomeState extends State<Home> {
                                 onTap: (){},
                               ),
                               Text(
-                                "Water Melons",
+                                "Mangoes",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              Text("N300 per/kg"),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              GestureDetector(
+                                child: Container(
+                                  height: 200.0,
+                                  width: 150.0,
+                                  // color: Colors.orange,
+                                  margin: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                    horizontal: 10.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage("images/oranges.webp"),
+                                          fit: BoxFit.fitHeight),
+                                      borderRadius: BorderRadius.circular(18.0)
+                                  ),
+                                ),
+                                onTap: (){},
+                              ),
+                              Text(
+                                "Oranges",
                                 style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold
@@ -426,6 +426,35 @@ class _HomeState extends State<Home> {
                               Text("N300 per/kg"),
                             ],
                           ),
+                          Column(
+                            children: [
+                              GestureDetector(
+                                child: Container(
+                                  height: 200.0,
+                                  width: 150.0,
+                                  // color: Colors.orange,
+                                  margin: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                    horizontal: 10.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage("images/melon.jpeg"),
+                                          fit: BoxFit.fitHeight),
+                                      borderRadius: BorderRadius.circular(18.0)
+                                  ),
+                                ),
+                                onTap: (){},
+                              ),
+                              Text(
+                                "Water Melons",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              Text("N300 per/kg"),
+                            ],
+                          ),
                         ],
                       ),
                     ),
@@ -439,7 +468,7 @@ class _HomeState extends State<Home> {
                   Padding(
                     padding: const EdgeInsets.only(left: 18),
                     child: Text(
-                      "Vegetables/Crops",
+                      "Vegetables and Crops",
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold
@@ -474,7 +503,7 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
-                                      image: DecorationImage(image: AssetImage("images/crops.webp"),
+                                      image: DecorationImage(image: AssetImage("images/beans.jpeg"),
                                           fit: BoxFit.fitHeight),
                                       borderRadius: BorderRadius.circular(18.0)
                                   ),
@@ -482,13 +511,129 @@ class _HomeState extends State<Home> {
                                 onTap: (){},
                               ),
                               Text(
-                                "Rice",
+                                "Beans",
                                 style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold
                                 ),
                               ),
-                              Text("N800 per/kg"),
+                              Text("N700 per/kg"),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              GestureDetector(
+                                child: Container(
+                                  height: 200.0,
+                                  width: 150.0,
+                                  // color: Colors.orange,
+                                  margin: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                    horizontal: 10.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage("images/cassava.jpeg"),
+                                          fit: BoxFit.fitHeight),
+                                      borderRadius: BorderRadius.circular(18.0)
+                                  ),
+                                ),
+                                onTap: (){},
+                              ),
+                              Text(
+                                "Cassava",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              Text("N650 per/kg"),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              GestureDetector(
+                                child: Container(
+                                  height: 200.0,
+                                  width: 150.0,
+                                  // color: Colors.orange,
+                                  margin: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                    horizontal: 10.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage("images/cocoyam.jpeg"),
+                                          fit: BoxFit.fitHeight),
+                                      borderRadius: BorderRadius.circular(18.0)
+                                  ),
+                                ),
+                                onTap: (){},
+                              ),
+                              Text(
+                                "CocoYam",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              Text("N600 per/kg"),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              GestureDetector(
+                                child: Container(
+                                  height: 200.0,
+                                  width: 150.0,
+                                  // color: Colors.orange,
+                                  margin: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                    horizontal: 10.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage("images/efo_riro.jpeg"),
+                                          fit: BoxFit.fitHeight),
+                                      borderRadius: BorderRadius.circular(18.0)
+                                  ),
+                                ),
+                                onTap: (){},
+                              ),
+                              Text(
+                                "Efo Riro",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              Text("N150 per/kg"),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              GestureDetector(
+                                child: Container(
+                                  height: 200.0,
+                                  width: 150.0,
+                                  // color: Colors.orange,
+                                  margin: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                    horizontal: 10.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage("images/okro.jpeg"),
+                                          fit: BoxFit.fitHeight),
+                                      borderRadius: BorderRadius.circular(18.0)
+                                  ),
+                                ),
+                                onTap: (){},
+                              ),
+                              Text(
+                                "Okro",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              Text("N250 per/kg"),
                             ],
                           ),
                           Column(
@@ -532,21 +677,21 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
-                                      image: DecorationImage(image: AssetImage("images/apple.jpeg"),
-                                          fit: BoxFit.fill),
+                                      image: DecorationImage(image: AssetImage("images/pepper.jpeg"),
+                                          fit: BoxFit.fitHeight),
                                       borderRadius: BorderRadius.circular(18.0)
                                   ),
                                 ),
                                 onTap: (){},
                               ),
                               Text(
-                                "Strawberry",
+                                "Pepper",
                                 style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold
                                 ),
                               ),
-                              Text("N300 per/kg"),
+                              Text("N200 per/kg"),
                             ],
                           ),
                           Column(
@@ -561,21 +706,21 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
-                                      image: DecorationImage(image: AssetImage("images/apple.jpeg"),
-                                          fit: BoxFit.fill),
+                                      image: DecorationImage(image: AssetImage("images/potatoes.jpeg"),
+                                          fit: BoxFit.fitHeight),
                                       borderRadius: BorderRadius.circular(18.0)
                                   ),
                                 ),
                                 onTap: (){},
                               ),
                               Text(
-                                "Strawberry",
+                                "Potatoes",
                                 style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold
                                 ),
                               ),
-                              Text("N300 per/kg"),
+                              Text("N450 per/kg"),
                             ],
                           ),
                           Column(
@@ -590,21 +735,108 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
-                                      image: DecorationImage(image: AssetImage("images/apple.jpeg"),
-                                          fit: BoxFit.fill),
+                                      image: DecorationImage(image: AssetImage("images/crops.webp"),
+                                          fit: BoxFit.fitHeight),
                                       borderRadius: BorderRadius.circular(18.0)
                                   ),
                                 ),
                                 onTap: (){},
                               ),
                               Text(
-                                "Strawberry",
+                                "Rice",
                                 style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold
                                 ),
                               ),
-                              Text("N300 per/kg"),
+                              Text("N800 per/kg"),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              GestureDetector(
+                                child: Container(
+                                  height: 200.0,
+                                  width: 150.0,
+                                  // color: Colors.orange,
+                                  margin: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                    horizontal: 10.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage("images/tomatoes.jpeg"),
+                                          fit: BoxFit.fitHeight),
+                                      borderRadius: BorderRadius.circular(18.0)
+                                  ),
+                                ),
+                                onTap: (){},
+                              ),
+                              Text(
+                                "Tomatoes",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              Text("N250 per/kg"),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              GestureDetector(
+                                child: Container(
+                                  height: 200.0,
+                                  width: 150.0,
+                                  // color: Colors.orange,
+                                  margin: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                    horizontal: 10.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage("images/ugu.jpeg"),
+                                          fit: BoxFit.fitHeight),
+                                      borderRadius: BorderRadius.circular(18.0)
+                                  ),
+                                ),
+                                onTap: (){},
+                              ),
+                              Text(
+                                "Ugu",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              Text("N150 per/kg"),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              GestureDetector(
+                                child: Container(
+                                  height: 200.0,
+                                  width: 150.0,
+                                  // color: Colors.orange,
+                                  margin: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                    horizontal: 10.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(image: AssetImage("images/yam.jpeg"),
+                                          fit: BoxFit.fitHeight),
+                                      borderRadius: BorderRadius.circular(18.0)
+                                  ),
+                                ),
+                                onTap: (){},
+                              ),
+                              Text(
+                                "Yam",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                              Text("N750 per/kg"),
                             ],
                           ),
                         ],
@@ -620,7 +852,7 @@ class _HomeState extends State<Home> {
                   Padding(
                     padding: const EdgeInsets.only(left: 18),
                     child: Text(
-                      "Melons",
+                      " Other MTU produce",
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold
@@ -630,7 +862,7 @@ class _HomeState extends State<Home> {
                   Padding(
                     padding: const EdgeInsets.only(left: 18),
                     child: Text(
-                      "Fresh Melons fruits",
+                      "Other produce from MTU",
                     ),
                   ),
                   Container(
@@ -655,6 +887,7 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
+                                    //TODO: add bread
                                       image: DecorationImage(image: AssetImage("images/apple.jpeg"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.circular(18.0)
@@ -684,6 +917,7 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
+                                    //TODO: add coconut bread
                                       image: DecorationImage(image: AssetImage("images/apple.jpeg"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.circular(18.0)
@@ -713,6 +947,7 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
+                                    //TODO: add sarden bread
                                       image: DecorationImage(image: AssetImage("images/apple.jpeg"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.circular(18.0)
@@ -742,6 +977,7 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
+                                    //TODO: add mtu bottled water
                                       image: DecorationImage(image: AssetImage("images/apple.jpeg"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.circular(18.0)
@@ -771,6 +1007,7 @@ class _HomeState extends State<Home> {
                                     horizontal: 10.0,
                                   ),
                                   decoration: BoxDecoration(
+                                    //TODO: add mtu sarchetwater
                                       image: DecorationImage(image: AssetImage("images/apple.jpeg"),
                                           fit: BoxFit.fill),
                                       borderRadius: BorderRadius.circular(18.0)
