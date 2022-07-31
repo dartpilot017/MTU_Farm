@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kore_farms/pages/login.dart';
+import 'package:kore_farms/login.dart';
 
 class signupPage extends StatefulWidget {
   _signupPageState createState() => _signupPageState();
