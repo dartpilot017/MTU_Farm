@@ -4,6 +4,9 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:kore_farms/screens/menu.dart';
 import 'package:kore_farms/screens/fruitwidget.dart';
 import 'package:kore_farms/screens/vegetables.dart';
+import 'package:kore_farms/widgets/fruit_widgets/applepage.dart';
+import 'package:kore_farms/widgets/fruit_widgets/bananapage.dart';
+import 'package:kore_farms/widgets/fruit_widgets/grapepage.dart';
 
 
 
@@ -259,7 +262,12 @@ class _HomeState extends State<Home> {
                                       borderRadius: BorderRadius.circular(18.0)
                                   ),
                                 ),
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => applePage())
+                                  );
+                                },
                               ),
                               Column(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -296,7 +304,12 @@ class _HomeState extends State<Home> {
                                       borderRadius: BorderRadius.circular(18.0)
                                   ),
                                 ),
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => bananaPage()),
+                                  );
+                                },
                               ),
                               Text(
                                 "Banana",
@@ -327,7 +340,12 @@ class _HomeState extends State<Home> {
                                       borderRadius: BorderRadius.circular(18.0)
                                   ),
                                 ),
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => grapePage()),
+                                  );
+                                },
                               ),
                               Text(
                                 "Grapes",

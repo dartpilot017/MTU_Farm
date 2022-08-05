@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:kore_farms/screens/menu.dart';
 
-class bananaPage extends StatefulWidget {
-  _bananaPageState createState() => _bananaPageState();
+class grapePage extends StatefulWidget {
+  _grapePageState createState() => _grapePageState();
 }
 
-class _bananaPageState extends State<bananaPage> {
+class _grapePageState extends State<grapePage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,7 +21,7 @@ class _bananaPageState extends State<bananaPage> {
               onPressed: (){Navigator.pop(context);}
           ),
           title: Text(
-            "Banana",
+            "Grapes",
           ),
           backgroundColor: Colors.green.shade700,
         ),
@@ -39,8 +39,8 @@ class _bananaPageState extends State<bananaPage> {
                 ),
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("images/banana.jpg"),
-                        fit: BoxFit.fitHeight),
+                        image: AssetImage("images/grape.png"),
+                        fit: BoxFit.fitWidth),
                     borderRadius: BorderRadius.circular(18.0)
                 ),
               ),
@@ -56,7 +56,7 @@ class _bananaPageState extends State<bananaPage> {
                         left: 15.0
                     ),
                     child: Text(
-                      "Banana",
+                      "Grapes",
                       style: TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.w600

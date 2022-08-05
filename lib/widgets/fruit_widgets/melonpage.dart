@@ -11,61 +11,105 @@ class _melonPageState extends State<melonPage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        drawer: menu(),
+        // drawer: back(),
         appBar: AppBar(
           title: Text(
-            "WATER MELONS",
-            style: TextStyle(
-                fontWeight: FontWeight.bold
-            ),
+            "Apple",
           ),
-          backgroundColor: Colors.teal,
+          backgroundColor: Colors.green.shade700,
           actions: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Container(
-                width: 35.0,
-                alignment: Alignment.center,
-                child: GestureDetector(
-                  child: Stack(
-                    children: <Widget>[
-                      const IconButton(
-                        padding: EdgeInsets.only(
-                          right: 20,
-                        ),
-                        icon: Icon(
-                          Icons.shopping_cart_outlined,
-                          color: Colors.black,
-                          size: 30,),
-                        onPressed: null,
-                      ),
-                      1 == 0
-                          ? Container()
-                          : Positioned(
-                        top: 0,
-                        right: 0,
-                        child: Stack(
-                          children: <Widget>[
-                            Container(
-                              height: 20.0,
-                              width: 20.0,
-                              decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.red,
-                              ),
-                              child: const Center(
-                                child: Text("0"),
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+              padding: const EdgeInsets.all(5.0),
+              child:  IconButton(
+                // padding: EdgeInsets.only(
+                //   right: 10,
+                // ),
+                  icon: Icon(
+                    Icons.arrow_back_ios,
+                    color: Colors.white,
+                    size: 22,),
+                  onPressed: (){Navigator.pop(context);}
+                // onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => cartPage()))},
+              ),
+            )
+          ],
+        ),
+        body: Container(
+          child: ListView(
+            children: <Widget>[
+              Padding(padding: EdgeInsets.all(5),),
+              Container(
+                height: 250,
+                width: 350,
+                // color: Colors.brown,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 10.0,
+                ),
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("images/apple.jpeg"),
+                        fit: BoxFit.fitHeight),
+                    borderRadius: BorderRadius.circular(18.0)
                 ),
               ),
-            ),
-          ],
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        right: 50.0,
+                        top: 15.0,
+                        bottom: 15.0,
+                        left: 15.0
+                    ),
+                    child: Text(
+                      "Apples",
+                      style: TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.w600
+                      ),
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(
+                            left: 50
+                        ),
+                        child: Text(
+                          "#160 per/kg",
+                          style: TextStyle(
+                            fontSize: 28,
+                            // fontWeight: FontWeight.w600
+                          ),
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
+              Padding(padding: EdgeInsets.all(5)),
+              Padding(
+                  padding: EdgeInsets.only(
+                      right: 8.0,
+                      left: 15,
+                      bottom: 5.0
+                  ),
+                  child: Text(
+                    "Grapes will provide natural nutrients. "
+                        "The Chemical in organic grapes which can be healthier hair and skin. "
+                        "It can be improve Your heart health. Protect your body from",
+                    style: TextStyle(
+                        fontSize: 15
+                    ),
+                  )
+              ),
+            ],
+          ),
         ),
       ),
     );

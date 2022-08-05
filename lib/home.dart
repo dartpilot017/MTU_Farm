@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kore_farms/cartpage.dart';
+import 'package:kore_farms/screens/cartwidget.dart';
 // import 'package:flutter_swiper/flutter_swiper.dart';
-import 'package:kore_farms/menu.dart';
-import 'package:kore_farms/fruitpage.dart';
+import 'package:kore_farms/screens/menu.dart';
+import 'package:kore_farms/screens/fruitwidget.dart';
 
 
 

@@ -77,7 +77,7 @@ class menu extends StatelessWidget {
                     // color: Colors.teal,
                     image: DecorationImage(
                         fit: BoxFit.fill,
-                        image: AssetImage("images/tu.jpeg")
+                        image: AssetImage("images/mtulog.jpg")
                     ),
                   ),
                 ),
@@ -106,6 +106,8 @@ class menu extends StatelessWidget {
     );
   }
 }
+
+
 
 
 
